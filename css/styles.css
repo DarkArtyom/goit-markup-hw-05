@@ -134,6 +134,7 @@ img {
 }
 
 .header-item {
+    position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 50px;
@@ -151,10 +152,24 @@ img {
     color: var(--header-link-color);
 }
 
+.header-link.current::after {
+    content:"";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 453px;
+    top: 76px;
+    
+    background: #2196F3;
+    border-radius: 2px;
+}
+
 .header-link:hover, 
 .header-link:focus {
     color: var(--link-color);
 }
+
+
 
 .link.current {
     color: var(--link-color);
@@ -320,6 +335,8 @@ img {
 }
 
 .works-item {
+    top: 0px;
+    left: 0px;
     margin-right: var(--list-right-margin);
 }
 
@@ -334,6 +351,35 @@ img {
     line-height: 1.16;
     text-align: center;
     color: var(--title-text-color);
+}
+
+.img-thumb {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    /* width: 370px;
+    height: 294px; */
+}
+
+.thumb-works {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    /* left: 215px;
+    top: 1435px; */
+
+background: rgba(47, 48, 58, 0.8);
+}
+
+.works-item-text {
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 /* --------------main body team line------*/
