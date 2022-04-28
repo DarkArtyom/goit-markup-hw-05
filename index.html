@@ -51,7 +51,7 @@
                 <section class="section-hero section">
                     <div class="container">
                         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                        <button type="button" class="hero-button">Заказать услугу</button>
+                        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                     </div>
                 </section>
             <!-- main body advantages line -->
@@ -104,24 +104,16 @@
                     <h2 class="works-title">Чем мы занимаемся</h2>
                     <ul class="works-list list">
                         <li class="works-item">
-                            <div class="img-thumb">
-                                <img src="./images/about-img-1.jpg" alt="планшет и кодинг" width="370" height="294">
-                                <!-- <div class="thumb-works"> -->
-                                <p class="works-item-text">Десктопные приложения</p>
-                                <!-- </div> -->
-                            </div>
+                            <img src="./images/about-img-1.jpg" alt="планшет и кодинг" width="370" height="294">
+                            <p class="works-item-text">Десктопные приложения</p>
                         </li>
                         <li class="works-item">
-                            <div class="img-thumb">
-                                <img src="./images/about-img-2.jpg" alt="ноутбук и телефон" width="370" height="294">
-                                <p class="works-item-text">Мобильные приложения</p>
-                            </div>
+                            <img src="./images/about-img-2.jpg" alt="ноутбук и телефон" width="370" height="294">
+                            <p class="works-item-text">Мобильные приложения</p>
                         </li>
                         <li class="works-item">
-                            <div class="img-thumb">
                             <img src="./images/about-img-3.jpg" alt="рисунок в планшете" width="370" height="294">
                             <p class="works-item-text">Дизайнерские решения</p>
-                        </div>
                         </li>
                     </ul>
                 </div>
@@ -386,5 +378,15 @@
                 </div>
             </div>    
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-button" data-modal-close>
+                    <svg class="icon-Vector" width="11" height="11">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
